@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+
+
+  <script>
+
+    function submitMessage() {
+
+      var first = document.getElementById("fName").value
+      var last = document.getElementById("lName").value;
+      var mail = document.getElementById("email").value;
+      var cmt = document.getElementById("comment").value;
+
+      if (first == "") {
+        alert('check your First name!');
+
+      } else if (last == "") {
+        alert('check your Last name!');
+
+      } else if (mail == "") {
+
+        alert('check your Email');
+
+      } else if (cmt == "") {
+
+        alert('Please give your comments');
+
+      } else {
+
+        alert("Hi, " + first + " " + last + " " + "thanks for your feed back, we hope to see you again!");
+
+      }
+
+    }
+
+
+  </script>
+  
+</head>
+
+<body>
+
+
+  <div class="top-bar">
+    <div class="container">
+      <col-12 class="text-right">
+        <p><a href="tel:0939776349815">Call Me</a></p>
+      </col-12>
+    </div>
+  </div>
+
+
+  <nav class="navbar sticky-top bg-light navbar-light navbar-expand-lg mb-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="image/logo.png" alt="logo" title="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="page-header-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center pt-5">
+          <h1>About Me</h1>
+          <p>Even better if you will know me in person.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="my-5">
+    <div class="container contact">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="contact-info">
+            <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+            <h2>Get in Touch</h2>
+            <h4>I would Love to recieve some feedback from you about my website.</h4>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-2">First Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="fName" placeholder="Enter First Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Last Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lName" placeholder="Enter Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Comment:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" onclick="submitMessage();">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright © 2020
+            <span id="year"></span> Hanz Bernabe</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+
+.body {
+    overflow-x: hidden;
+    font-family: "montserrat", sans-serif;
+    max-width: 1366px;
+    
+}
+
+.lead{
+  font-size: 24px!important;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+p{
+font-size: 18px;
+}
+
+
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+
+.fab{
+  color: red;
+}
+
+.fas{
+  color: red;
+}
+
+
+
+.navbar-brand img{
+height:  3rem;
+}
+.navbar {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  z-index: 10;
+}
+.nav-item {
+  padding: .5rem;
+}
+.nav-link {
+  color: #5b5555!important;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #4981b3!important;
+}
+
+
+
+
+.carousel-item{
+  height: 450px;
+}
+
+.carousel-image-1{
+  background: url('../image/carousel/car1.jpg');
+  background-size: cover;
+}
+.carousel-image-3{
+  background: url('../image/carousel/car2.jpg');
+  background-size: cover;
+}
+.carousel-image-2{
+  background: url('../image/carousel/car3.jpg');
+  background-size: cover;
+}
+
+
+
+
+#home-heading {
+position: relative;
+min-height: 300px;
+background: url('../image/gif/91.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+text-align: center;
+color: #fff;
+}
+
+.dark-overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, .3);
+
+}
+
+
+
+
+#video-play{
+position: relative;
+min-height: 250px;
+background: url('../image/gif/violett.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: 0 -300px;
+text-align: center;
+color: #fff;
+}
+
+#video-play a{
+color: #fff;
+
+}
+
+
+
+
+
+
+#page-header-contact{
+  height: 350px;
+  background: url('../image/gif/contact.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding: 50px;
+}
+
+#page-header{
+  height: 350px;
+  background: url('../image/gif/about.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding: 50px;
+}
+
+#page-header-music{
+  height: 350px;
+  background: url('../image/gif/poppunk.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: rgb(49, 0, 0);
+  border-bottom: 1px #eee solid;
+  padding: 50px;
+}
+
+.aboutme-img{
+  
+  margin-top: -150px;
+
+}
+
+.aboutme-img2{
+  margin-top: -50px;
+
+}
+
+#home-about {
+  position: relative;
+  min-height: 250px;
+  background: url('../image/gif/cowboy.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  }
+
+
+  #family img {
+    margin-top: -50px; }
+  #family .card:hover {
+    background: #3292a6;
+    color: #fff; }
+  #family .fab {
+    color: #fff; }
+
+
+    .jumbotron {
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      background-color:black;
+    }
+    .jumbotron video {
+      position: absolute;
+      top: 0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      opacity:0.5;
+    }
+    .jumbotron .container {
+      z-index: 2;
+      position: relative;
+    }
+    
+
+
+
+    input[type=checkbox].css-checkbox {
+      display: none;
+  }
+
+  .css-label {
+
+      display: flexbox;
+     
+      background-color: #E9EEF4;
+      background-size: contain;
+  }
+
+  input[type=checkbox].css-checkbox:checked+label.css-label {
+      background-position: 0 0;
+      border: 3px solid #2FBCDF;
+  }
+
+
+  #main-footer {
+    background: rgb(255, 0, 0);
+    color: #fff;
+  }
+
+  #page-header-gallery{
+    height: 350px;
+    background: url('../image/gif/fatee.png');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    padding: 50px;
+  }
+
+
+  #side-bg{
+    background: url('../image/gif/fatee.png');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+
+  }
+
+
+	.col-md-3{
+		background: #c2ff48;
+		padding: 4%;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+  }
+  
+
+  .zoom{
+    transition: transform .2s;
+  }
+  .zoom:hover{
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+  }

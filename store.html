@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Website </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Website</title>
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+
+
+
+  <script language="javascript">
+    function display() {
+      var name = document.getElementById("cusName").value
+      var img1 = document.getElementById("item1").value;
+      var img2 = document.getElementById("item2").value;
+      var img3 = document.getElementById("item3").value;
+      var img4 = document.getElementById("item4").value;
+      var img5 = document.getElementById("item5").value;
+      var img6 = document.getElementById("item6").value;
+      var img7 = document.getElementById("item7").value;
+      var img8 = document.getElementById("item8").value;
+      var img9 = document.getElementById("item9").value;
+      if (document.getElementById("cusName").value == "")
+        alert('please enter your name!');
+
+      else {
+
+
+        var totalItem = (parseFloat(img1) + parseFloat(img2) + parseFloat(img3) + parseFloat(img4) + parseFloat(img5) + parseFloat(img6) + parseFloat(img7) + parseFloat(img8) + parseFloat(img9));
+        if (totalItem == 0)
+          alert('please select an item')
+        else {
+          if (totalItem >= 2500)
+            document.getElementById("totalSale").innerHTML = "Hi, " + name + " the total price is " + totalItem + " thats a lot, Thank you for buying please come again";
+
+          else {
+            document.getElementById("totalSale").innerHTML = "Hi, " + name + " the total price is " + totalItem + " Thank you come again";
+
+          }
+        }
+      }
+
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <col-12 class="text-right">
+        <p><a href="tel:0939776349815">Call Me</a></p>
+      </col-12>
+    </div>
+  </div>
+
+  
+  <nav class="navbar sticky-top bg-light navbar-light navbar-expand-lg mb-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="image/logo.png" alt="logo" title="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Return</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="page-header-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center text-light pt-5">
+          <h1>'These are my Artworks'</h1>
+          <p>I started practicing sketching since grade 5, but I just sketch whenever I feel like it.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="row">
+    <div id="side-bg" class="col-2"></div>
+    <div class="bg-transparent col-8">
+      <section id="gallery-store" class="py-5">
+        <div class="container bg-transparent">
+          <h1 class="text-center">My Art Gallery</h1>
+          <p class="text-center"><strong>Php 250</strong> each items</p>
+
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" class="form-control" id="cusName" placeholder="Enter Name">
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-4  align-self-center">
+              <input id="checkboxid" type="checkbox" class="css-checkbox" onclick=item1.value=500>
+              <label for="checkboxid" class="css-label"><img src="image/gallery/1.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item1" value=0>
+            </div>
+
+            <div class="col-md-4  align-self-center">
+              <input id="checkboxid1" type="checkbox" class="css-checkbox" onclick=item2.value=500>
+              <label for="checkboxid1" class="css-label"><img src="image/gallery/2.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item2" value=0>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+              <input id="checkboxid2" type="checkbox" class="css-checkbox" onclick=item3.value=500>
+              <label for="checkboxid2" class="css-label"><img src="image/gallery/3.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item3" value=0>
+            </div>
+          </div>
+
+
+          <div class="row mb-4">
+            <div class="col-md-4  align-self-center">
+              <input id="checkboxid3" type="checkbox" class="css-checkbox" onclick=item4.value=500>
+              <label for="checkboxid3" class="css-label"><img src="image/gallery/4.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item4" value=0>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+              <input id="checkboxid4" type="checkbox" class="css-checkbox" onclick=item5.value=500>
+              <label for="checkboxid4" class="css-label"><img src="image/gallery/5.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item5" value=0>
+            </div>
+
+
+
+            <div class="col-md-4  align-self-center">
+              <input id="checkboxid5" type="checkbox" class="css-checkbox" onclick=item6.value=500>
+              <label for="checkboxid5" class="css-label"><img src="image/gallery/6.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item6" value=0>
+            </div>
+          </div>
+
+          <div class="row mb-4  align-self-center">
+            <div class="col-md-4">
+              <input id="checkboxid6" type="checkbox" class="css-checkbox" onclick=item7.value=500>
+              <label for="checkboxid6" class="css-label"><img src="image/gallery/7.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item7" value=0>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+              <input id="checkboxid7" type="checkbox" class="css-checkbox" onclick=item8.value=500>
+              <label for="checkboxid7" class="css-label"><img src="image/gallery/8.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item8" value=0>
+            </div>
+
+
+
+            <div class="col-md-4 ">
+              <input id="checkboxid8" type="checkbox" class="css-checkbox" onclick=item9.value=500>
+              <label for="checkboxid8" class="css-label"><img src="image/gallery/9.jpg" height="300" width="300"
+                  alt=""></label>
+              <input type=hidden id="item9" value=0>
+            </div>
+          </div>
+
+
+          <div class="row mt-3  bg-light">
+            <div class="col text-center">
+              <h1>Total Sale</h1>
+              <div class="col text-center">
+                <p id="totalSale"></p>
+              </div>
+              <div class="col text-center"><input type="button" class="btn btn-outline-success btn-lg "
+                  value="click to buy" onclick="display();">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <div id="side-bg" class="col-2"></div>
+  </div>
+
+
+</body>
+
+</html>
